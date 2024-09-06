@@ -6,7 +6,7 @@ FROM $FROM_IMAGE
 # This is already in the Lambda image but not in the AL2 image
 RUN yum install -y gcc
 
-RUN yum uninstall openssl-devel
+RUN yum remove openssl-devel
 RUN yum install openssl11 openssl11-devel
 
 # Install Rust
