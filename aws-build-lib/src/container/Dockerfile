@@ -8,7 +8,7 @@ RUN yum install -y gcc
 
 RUN yum update
 RUN yum remove openssl-devel
-RUN yum install openssl11 openssl11-devel
+RUN yum install -y openssl11 openssl11-devel
 
 # Install Rust
 ARG RUST_VERSION
